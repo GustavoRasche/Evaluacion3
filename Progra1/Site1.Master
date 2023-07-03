@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Progra1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form runat="server">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li><asp:HyperLink ID="lnkIngresarMedidor" runat="server" NavigateUrl="~/IngresarMedidor.aspx">Ingresar Medidor</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="lnkVerMedidores" runat="server" NavigateUrl="~/VerMedidor.aspx">Ver Medidores</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="lnkIngresarLectura" runat="server" NavigateUrl="~/IngresarLectura.aspx">Ingresar Lectura</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="lnkMostrarLecturas" runat="server" NavigateUrl="~/MostrarLecturas.aspx">Mostrar Lecturas</asp:HyperLink></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </div>
+        <footer>
+            <p>&copy; 2023 Evaluacion</p>
+        </footer>
+    </form>
+</body>
+</html>
